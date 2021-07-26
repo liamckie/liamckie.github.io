@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://kit.fontawesome.com/7769416569.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="home-link">
+            <h1 class="name"><span class="logo"><</span>LM<span class="logo">/></span></h1>
+            </a>
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About Me </a></li>
+                <li><a href="index.html#projects-title">Projects</a></li>
+                <li><a href="index.html#footer">Contact Me</a></li>
+            </ul>
+            <div class="switch">
+                <div class="flicker"></div>
+                <div class="moon"></div>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div class="main-text">
+            <h1 id="name">Hi, my name is Liam.</h1>
+            <h2>Welcome To My Portfolio!</h2>
+            <p>I am a second year university student currently doing a Computer Science degree. I am also a self-taught programmer and I love to solve problems by programming!</p>
+            <div class="about-me-btns">
+                <!-- Change to a PDF -->
+                <h2 class="about-me-btn cv"><a download="" href="">Download CV</a></h2>
+                <h2 class="about-me-btn contact"><a href="#footer">Contact Me</a></h2>
+            </div>
+        </div>
+    </section>
+
+    <div class="projects-title" id="projects-title">
+        <h1 id="name">Projects</h1>
+    </div>
+    <section class="projects-section">
+        <div class="square">
+            <h2>Connect 4</h2>
+            <p>A Python game based from the board game.</p>
+            <img class="project-connect4-img" src="images/connect_4_game_screenshot.png" alt="">
+            <h2><a target="#" href="https://github.com/liamckie/Connect-4">Click Here</a></h2>
+        </div>
+        <div class="square">
+            <h2>Dodge Squares</h2>
+            <p>A Python game in which you have to dodge the squares to earn points.</p>
+            <img class="project-dodgesquare-img" src="images/square_dodger_game_screenshot.png" alt="">
+            <h2><a target="#" href="https://github.com/liamckie/DodgeSquares">Click Here</a></h2>
+        </div>
+        <div class="square">
+            <h2>Portfilio</h2>
+            <p>A HTML, CSS and JavaScript website you are viewing on now.</p>
+            <img class="project-portfolio-img" src="images/portfolio_website_screenshot.png" alt="">
+            <h2><a target="#" href="https://github.com/liamckie/liamckie.github.io">Click Here</a></h2>
+        </div>
+        <div class="square">
+            <h2>Dinosaur Game</h2>
+            <p>A HTML, CSS and JavaScript game based off the offline chrome game.</p>
+            <img class="project-dinosaurgame-img" src="images/dinosaur_game_screenshot.png" alt="">
+            <h2><a target="#" href="https://github.com/liamckie/dinosaur_game">Click Here</a> </h2>
+        </div>
+        <div class="square">
+            <h2>Journal App</h2>
+            <p>A C# console application that simulates an actual journal.</p>
+            <img class="project-journalapp-img" src="images/journal_app_screenshot.png" alt="">
+            <h2><a target="#" href="https://github.com/liamckie/JournalApp">Click Here</a></h2>
+        </div>
+        <div class="square">
+            <h2>Maze Game</h2>
+            <p>A C# console application that you can move around the maze using the arrow keys.</p>
+            <img class="project-mazegame-img" src="images/maze_game_screenshot.png" alt="">
+            <h2><a target="#" href="https://github.com/liamckie/maze-game">Click Here</a> </h2>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="contact-form">
+            <h1>Contact Form</h1>
+            <form action="https://formsubmit.co/l.mckie5426@gmail.com" method="POST">
+                <label for="name">Name</label>
+                <input id="input" class="contact-form-name" type="text" name="name" placeholder="Full Name" required>
+                <label for="email">Email</label>
+                <input id="input" class="contact-form-email" type="text" name="email" placeholder="Your Email" required>
+                <label for="subject">Subject</label>
+                <input id="input" class="contact-form-subject" type="text" name="subject" placeholder="Subject">
+                <label for="message">Message</label>
+                <textarea class="contact-form-message" name="message" placeholder="Message" required></textarea>
+                <button class="contact-form-submit-btn" type="submit" name="">Send Email</button>
+
+                <input type="hidden" name="_next" value="Thank you, your email has been sent!">
+                <input type="hidden" name="_subject" value="Portfolio : New Email">
+                <input type="hidden" name="_captcha" value="false">
+
+            </form>
+        </div>
+        <p>&copy; 2021 Liam Mckie</p>
+    </footer>
+
+    <script src="src/script.js"></script>
+</body>
+</html>

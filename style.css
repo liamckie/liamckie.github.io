@@ -1,0 +1,622 @@
+* {
+    transition: 0.3s;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+body {
+    transition: 0.3s;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: white;
+    border-bottom: 2px solid red;
+    width: 100%;
+    padding: 10px 0px;
+    /* position: fixed; */
+}
+
+#name {
+    font-size: 50px;
+}
+
+.main {
+    margin-top: 100px;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.main-text {
+    padding: 30px;
+}
+
+.about-me-btns {
+    display: flex;
+    flex-wrap: row;
+    margin: 0 auto;
+}
+
+.github-link {
+    width: auto;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+}
+
+.github-link-text {
+    font-size: 30px;
+}
+
+.dark .github-link {
+    background-color: black;
+}
+
+.about-me-btn {
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0px 20px 0px 0px;
+}
+
+.cv:focus {
+    transition: 5.3s;
+}
+
+.dark .about-me-btn {
+    background-color: black;
+}
+
+.switch {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(26, 26, 26);
+    position: relative;
+    margin: 15px 0px 0px 45px;
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+.flicker {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(255, 239, 94);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    box-shadow: inset 4px 4px 4px rgb(255, 243, 195), inset -6px -6px 7px rgb(261 202 120 / 90%); 
+}
+
+.dark {
+    background-color: rgb(41, 41, 41);
+    color: rgb(255, 255, 255);
+}
+
+.dark header {
+    background-color: rgb(81, 81, 81);
+    border-bottom: 2px solid red;
+}
+
+.dark .flicker {
+    transform: translateX(40px);
+    box-shadow: inset 4px 4px 4px rgb(0, 0, 0); 
+    background-color: rgb(0, 0, 0);
+}
+
+.dark a {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.dark a:hover {
+    color: rgb(255, 0, 0);
+    /* border-bottom: 1px solid red; */
+    transition: 0.9s;
+}
+
+.dark .square {
+    background-color: rgb(26, 26, 26);
+}
+
+.dark #footer {
+    background-color: rgb(61, 61, 61);
+    border-top: 2px solid red;
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    background-color: transparent;
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+.square {
+    width: 98%;
+    margin: 1%;
+    height: 350px;
+    background-color: white;
+    text-align: center;
+}
+
+.projects-title {
+    margin: 0 auto;
+}
+
+.projects-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.projects-section h2 a {
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.dark .projects-section h2 a {
+    background-color: black;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0px 20px 0px;
+    background-color: white;
+    border-top: 2px solid red;
+}
+
+#footer p {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.project-connect4-img {
+    width: 45%;
+    height: 70%;
+}
+
+.project-dodgesquare-img {
+    width: 60%;
+    height: 70%;
+}
+
+.project-dinosaurgame-img {
+    width: 100%;
+}
+
+.contact-form {
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+}
+
+.contact-form form {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+.contact-form form label {
+    padding: 20px 10px;
+}
+
+.contact-form form input, textarea {
+    margin: 10px 5px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: whitesmoke;
+    border: none;
+    color: black;
+    font-weight: 600;
+    outline: none;
+    transition: 0s;
+    border-radius: 5px;
+}
+
+form #input:focus {
+    outline: none;
+    border: red 2px solid;
+}
+
+form textarea:focus{
+    outline: none;
+    border: red 2px solid;
+}
+
+.contact-form-submit-btn {
+    margin: 10px auto;
+    padding: 20px;
+    font-size: 20px;
+    width: 20vw;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.dark .contact-form form input, textarea {
+    background-color: whitesmoke;
+    border: none;
+    color: black;
+    font-weight: 600;
+}
+
+header nav .name, header nav .logo {
+    margin: 0px 0px 0px 20px;
+    display: flex;
+    font-size: 60px;
+}
+
+header nav .logo {
+    color: red;
+    padding: 0;
+    display: flex;
+    margin: 0px 4px 0px 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    transform: uppercase;
+    text-transform: uppercase;
+    margin: 0px 25px;
+}
+
+.home-link:hover {
+    color: black;
+    border: none;
+    transition: none;
+}
+
+.dark .home-link:hover {
+    color: white;
+    border: none;
+    transition: none;
+}
+
+a:hover {
+    color: rgb(255, 0, 0);
+    transition: 0.9s;
+}
+
+.hamburger {
+    display: none;
+    background-color: transparent;
+    border: 0;
+    transition: 0.9s;
+}
+
+.hamburger:hover {
+    color: red;
+}
+
+.hamburger:focus {
+    outline: 0;
+}
+
+@media only screen and (min-width: 813px) and (max-width: 1940px) {
+    a {
+        margin: 0px 5px;   
+    }
+    
+    .logo, .name {
+        font-size: 20px;
+    }
+    
+    .name {
+        margin-top: 25px;
+    }
+
+    .switch {
+        margin: 10px 70px;
+    } 
+
+    li {
+        margin: 5px 5px;
+        list-style-type: none;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 824px) {
+    a {
+        margin: 0px 5px;   
+    }
+
+    .logo, .name {
+        font-size: 40px;
+    }
+
+    li {
+        margin: 3px 0px;
+    }
+    
+    .switch {
+        margin: 10px 0px;
+    }
+}
+
+@media only screen and (min-width: 513px) and (max-width: 1185px) {
+    a {
+        margin: 0px 5px;   
+    }
+
+    .logo, .name {
+        font-size: 20px;
+    }
+
+    .switch {
+        margin: 10px 0px;
+    }
+
+    ul.show {
+        display: flex;
+    }
+
+    .name {
+        margin: 25px 0px;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    li {
+        background-color: rgb(255, 255, 255);
+        border-radius: 4px;
+        margin: 5px 0px;
+    }
+
+    .switch {
+        display: flex;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        margin-top: -60px;
+    }
+
+    .hamburger {
+        display: flex;
+        background-color: transparent;
+        border: 0;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+        width: 10%;
+    }
+
+    ul {
+        display: none;
+        background-color: rgb(255, 255, 255);
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .main {
+        margin-top: 10px;
+    }
+
+    .dark nav, .dark ul, .dark li {
+        background-color: rgb(81, 81, 81);
+    }
+
+    ul.show {
+        display: block;
+    }
+
+    header nav .name {
+        display: none;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+    
+    .contact-form form {
+        font-size: 20px;
+    }
+    
+    .contact-form form label {
+        padding: 10px 10px;
+    }
+    
+    .contact-form form input, textarea {
+        font-size: 20px;
+    }
+    
+    .contact-form-submit-btn {
+        width: 80vw;
+    }   
+}
+
+@media only screen and (min-width: 970px) {
+    .main-text {
+        width: 60%;
+        margin-right: 20%;
+    }
+
+    .square {
+        width: 48%;
+        height: 600px;
+    }
+
+    .project-dinosaurgame-img {
+        width: 90%;
+    }
+
+    .project-journalapp-img {
+        width: 30%;
+        height: 45%;
+    }
+
+    .project-mazegame-img {
+        width: 90%;
+    }
+
+    .project-portfolio-img {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 520px) {
+    .about-me-btns {
+        display: block;
+        margin: 10px 10px 10px 10px;
+        width: 80%;
+    }
+
+    .about-me-btn {
+        display: block;
+        margin: 20px 0px 0px 0px;
+        width: 90%;
+    }
+
+    .github-link {
+        width: 90%;
+        margin: 20px auto;
+        padding: 10px 20px;
+        border-radius: 50px;
+        background-color: white;
+        border: none;
+    }
+
+    .github-link-text {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 360px) {
+    .about-me-btns {
+        display: block;
+        margin: 10px 10px 10px 10px;
+        width: 100%;
+    }
+    
+    .about-me-btn {
+        display: block;
+        margin: 10px 10px 10px 10px;
+        width: 80%;
+    }
+
+    .projects-title {
+        margin-top: 90px;
+        margin-left: 13%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+    .about-me-btn {
+        display: block;
+        margin: 10px 10px 10px -10px;
+        width: 90%;
+    }
+
+    .projects-title {
+        margin-top: 390px;
+    }
+}
+
+@media only screen and (min-width: 344px) and (max-width: 970px) {
+    .project-connect4-img {
+        width: 25%;
+        height: 50%;
+    }
+    
+    .project-dodgesquare-img {
+        width: 40%;
+        height: 54%;
+    }
+    
+    .project-dinosaurgame-img {
+        width: 0 auto;
+    }
+
+    .project-dinosaurgame-img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .project-journalapp-img {
+        width: 0 auto;
+        height: 45%;
+    }
+
+    .project-mazegame-img {
+        width: 0 auto;
+        height: 40%;
+    }
+
+    .project-portfolio-img {
+        width: 40%;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 343px) {
+    .project-connect4-img {
+        width: 0 auto;
+    }
+    
+    .project-dodgesquare-img {
+        width: 0 auto;
+    }
+    
+    .project-dinosaurgame-img {
+        width: 0 auto;
+    }
+
+    .project-dinosaurgame-img {
+        width: 0 auto;
+    }
+
+    .project-journalapp-img {
+        width: 0 auto;
+        height: 45%;
+    }
+
+    .project-mazegame-img {
+        width: 0 auto;
+        height: 40%;
+    }
+}
